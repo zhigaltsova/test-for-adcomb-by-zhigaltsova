@@ -158,6 +158,9 @@ body {
   width: calc(218px + (436 - 218) * ((100vw - 320px) / (767 - 320)));
   margin: 0 auto;
   display: block;
+
+  -webkit-filter: drop-shadow(0px 40px 80px rgba(0, 0, 0, 0.16));
+  filter: drop-shadow(0px 40px 80px rgba(0, 0, 0, 0.16));
 }
 h1 {
   font-size: 24px;
@@ -193,6 +196,8 @@ h1 ~ p {
 }
 .slider__item__icon {
   max-height: 100px;
+  -webkit-filter: drop-shadow(4px 4px 8px #a6abbd);
+  filter: drop-shadow(4px 4px 8px #a6abbd);
 }
 .contant {
   display: block;
@@ -280,6 +285,8 @@ h1::before {
 }
 .review.main .review__body {
   margin-top: -17px;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .review.main .review__img::before,
 .review.main .review__img::after {
@@ -530,7 +537,7 @@ h1::before {
     max-width: 1920px;
   }
   .spoiler__icon {
-    display: inline-block;
+    display: block;
     width: 40px;
     padding-top: 7px;
     float: left;
