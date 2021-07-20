@@ -225,12 +225,12 @@
 }
 .slider .slick-arrow.slick-prev {
   left: calc(50px + (250 - 50) * ((100vw - 320px) / (767 - 320)));
-  background: url(../iconsfont/vector.svg) 0 0 / 100% no-repeat;
+  background: url(../img/vector.svg) 0 0 / 100% no-repeat;
   transform: rotate(90deg);
 }
 .slider .slick-arrow.slick-next {
   right: calc(50px + (250 - 50) * ((100vw - 320px) / (767 - 320)));
-  background: url(../iconsfont/vector.svg) 0 0 / 100% no-repeat;
+  background: url(../img/vector.svg) 0 0 / 100% no-repeat;
   transform: rotate(-90deg);
 }
 .slider .slick-arrow.slick-disabled {
