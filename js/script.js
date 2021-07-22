@@ -59,3 +59,25 @@ $('.slider__item__icon').each(function(){
     $img.replaceWith($svg);
   }, 'xml');
 });
+
+
+
+//одинаковая выссота блоков
+function setEqualHeight(columns)
+{
+var tallestcolumn = 0;
+columns.each(
+function()
+{
+currentHeight = $(this).height();
+if(currentHeight > tallestcolumn)
+{
+tallestcolumn = currentHeight;
+}
+}
+);
+columns.height(tallestcolumn);
+}
+$(document).ready(function() {
+setEqualHeight($(".slider > div"));
+});
