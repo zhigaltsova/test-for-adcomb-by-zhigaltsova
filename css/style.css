@@ -230,7 +230,7 @@ h1 ~ p {
   color: #00c368;
 }
 .spoiler__title::before {
-  content: url(../iconsfont/vector.svg);
+  content: url(../img/vector.svg);
   display: block;
   float: right;
   width: 19px;
@@ -285,7 +285,7 @@ h1::before {
 }
 .review.main .review__img::before,
 .review.main .review__img::after {
-  content: url(../iconsfont/quotes.svg);
+  content: url(../img/quotes.svg);
   display: block;
   width: 39px;
   position: absolute;
@@ -499,7 +499,7 @@ h1::before {
   }
   .review.main .review__img::before,
   .review.main .review__img::after {
-    content: url(../iconsfont/quotes-g.svg);
+    content: url(../img/quotes-g.svg);
   }
   .review.main .review__img::before {
     top: 0;
