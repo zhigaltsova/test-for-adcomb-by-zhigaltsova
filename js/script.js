@@ -1,8 +1,10 @@
 //меню в мобильной версии
-$(document).ready(function() {
-        $('.header').click(function(event) {
+$(document).ready(function () {
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        $('.header').click(function (event) {
             $('.header__menu').toggleClass('active');
         });
+    }
 });
 
 
@@ -38,22 +40,6 @@ $(document).ready(function() {
  });
 
  
-//пункты слайдера по кругу
- let radius = 320;
-let fields = $('.slider__item'), container = $('.single-item'), width = container.width(), height = container.height();
-let angle = 0, step = (2*Math.PI) / fields.length;
-fields.each(function() {
-    let x = Math.round(width/2 + radius * Math.cos(angle) - $(this).width()/1.5);
-    let y = Math.round(height/2 + radius * Math.sin(angle) - $(this).height()/1.5);
-    if(window.console) {
-        console.log($(this).text(), x, y);
-    }
-    $(this).css({
-        left: x + 'px',
-        top: y + 'px'
-    });
-    angle += step;
-});
 
 
 //перекрасить svg
