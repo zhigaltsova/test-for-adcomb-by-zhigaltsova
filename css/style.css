@@ -158,9 +158,6 @@ body {
   width: calc(218px + (436 - 218) * ((100vw - 320px) / (767 - 320)));
   margin: 0 auto;
   display: block;
-
-  -webkit-filter: drop-shadow(0px 40px 80px rgba(0, 0, 0, 0.16));
-  filter: drop-shadow(0px 40px 80px rgba(0, 0, 0, 0.16));
 }
 h1 {
   font-size: 24px;
@@ -233,7 +230,7 @@ h1 ~ p {
   color: #00c368;
 }
 .spoiler__title::before {
-  content: url(../img/vector.svg);
+  content: url(../iconsfont/vector.svg);
   display: block;
   float: right;
   width: 19px;
@@ -285,12 +282,10 @@ h1::before {
 }
 .review.main .review__body {
   margin-top: -17px;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .review.main .review__img::before,
 .review.main .review__img::after {
-  content: url(../img/quotes.svg);
+  content: url(../iconsfont/quotes.svg);
   display: block;
   width: 39px;
   position: absolute;
@@ -423,7 +418,7 @@ h1::before {
     position: absolute;
   }
   .slider__pattern.-item-1 {
-    top: 300px;
+    top: 500px;
     left: calc(((100vw - 1920px) / 2));
     position: fixed;
   }
@@ -437,6 +432,7 @@ h1::before {
     width: 436px !important;
     position: absolute;
     top: 460px;
+    display: none;
     left: calc(50% - 230px);
   }
   .slider__body h1::before {
@@ -444,22 +440,36 @@ h1::before {
   }
 
   .single-item {
-    max-width: 850px;
-    height: 850px;
+    max-width: 1200px;
+    min-height: 600px;
     position: relative;
     margin: 0 auto;
+    background: center / 436px no-repeat url(/img/box-3.png);
   }
   .slider__item {
     cursor: pointer;
-    position: absolute;
+    display: inline-table;
+    min-width: 50%;
+    min-height: 200px;
+    height: 33%;
+  }
+  .row-left {
+    padding-left: 30%;
+    padding-right: 5%;
+  }
+
+  .row-right {
+    padding-right: 30%;
+    padding-left: 5%;
   }
   .slider__item__icon:hover path {
     fill: #00c368;
   }
+  
   .slider__body {
     margin-top: 160px;
     background: linear-gradient(to top left, rgba(255, 255, 255, 0), #e2e2e2);
-    padding-top: 40px;
+    padding: 40px 0;
   }
   .review.right,
   .review.left {
@@ -489,7 +499,7 @@ h1::before {
   }
   .review.main .review__img::before,
   .review.main .review__img::after {
-    content: url(../img/quotes-g.svg);
+    content: url(../iconsfont/quotes-g.svg);
   }
   .review.main .review__img::before {
     top: 0;
@@ -525,8 +535,6 @@ h1::before {
     margin-top: 0;
     display: inline-block;
     width: calc(100% - 268px);
-    -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
-    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
   }
 
   .review.main .review__img {
@@ -569,6 +577,7 @@ h1::before {
   .review.left {
     margin-top: 130px;
   }
+  
 }
 
 @media (min-width: 1920px) {
