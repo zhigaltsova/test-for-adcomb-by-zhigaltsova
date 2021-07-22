@@ -441,7 +441,7 @@ h1::before {
 
   .single-item {
     max-width: 1200px;
-    min-height: 600px;
+    min-height: 750px;
     position: relative;
     margin: 0 auto;
     background: center / 436px no-repeat url(/img/box-3.png);
@@ -450,7 +450,7 @@ h1::before {
     cursor: pointer;
     display: inline-table;
     min-width: 50%;
-    min-height: 200px;
+    min-height: 250px;
     height: 33%;
   }
   .row-left {
